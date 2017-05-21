@@ -1,5 +1,5 @@
 enum Weather {
-    case rainy, windy, sunny
+    case rainy, windy, sunny, snowy
 }
 
 func format(weather: Weather) -> String {
@@ -10,6 +10,8 @@ func format(weather: Weather) -> String {
         return "Weather 💨"
     case .sunny:
         return "Weather ☀️"
+    case .snowy:
+        return "Weather 🌨"
     }
 }
 
