@@ -3,19 +3,14 @@ enum Weather {
 }
 
 func format(weather: Weather) -> String {
-    if weather is Rainy {
+    switch weather {
+    case .rainy:
         return "Weather 🌧"
-    }
-    
-    if weather is Windy {
+    case .windy:
         return "Weather 💨"
-    }
-    
-    if weather is Sunny {
+    case .sunny:
         return "Weather ☀️"
     }
-    
-    return "Undefined Weather"
 }
 
-print(format(weather: Windy()))
+print(format(weather: .windy))
