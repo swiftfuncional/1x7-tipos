@@ -1,17 +1,5 @@
-class Weather {
-    
-}
-
-class Rainy: Weather {
-    
-}
-
-class Windy: Weather {
-    
-}
-
-class Sunny: Weather {
-    
+enum Weather {
+    case rainy, windy, sunny
 }
 
 func format(weather: Weather) -> String {
